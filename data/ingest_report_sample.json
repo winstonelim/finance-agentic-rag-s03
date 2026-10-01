@@ -1,0 +1,45 @@
+{
+ "generated_at": "2026-10-01T13:33:05+00:00",
+ "documents": 6,
+ "chunks": 125,
+ "routes": {
+  "failed": 2,
+  "done": 4
+ },
+ "parsers": {
+  "none": 1,
+  "pdfplumber": 4,
+  "pymupdf": 1
+ },
+ "verdicts": {
+  "fail": 1,
+  "ocr": 1,
+  "pass": 3,
+  "reparse": 1
+ },
+ "llm_repaired": [],
+ "synthetic_degraded": [],
+ "failed": [
+  {
+   "doc_id": "law_silson_std_hwp",
+   "reasons": [
+    "지원하지 않는 형식"
+   ],
+   "warnings": [
+    "지원하지 않는 형식"
+   ]
+  },
+  {
+   "doc_id": "knia_3500_scan",
+   "reasons": [
+    "OCR 필요 8쪽"
+   ],
+   "warnings": [
+    "OCR 캐시 없음: knia_3500_scan.json. data/ocr_cache/ 에 캐시를 넣으세요 (수강생은 디스코드의 ocr_cache.zip, 강사는 scripts/make_ocr_cache.py).",
+    "OCR 결과가 없어 제외한 페이지: [1, 2, 3, 4, 5]",
+    "OCR 필요 8쪽"
+   ]
+  }
+ ],
+ "skipped_by_checkpoint": 0
+}
